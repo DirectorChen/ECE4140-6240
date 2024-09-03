@@ -1,0 +1,50 @@
+#-----------------------------------------------------
+# ADS license file (should go into master file)
+#-----------------------------------------------------
+
+export ADS_LICENSE_FILE=27003@zuka.seas.gwu.edu
+
+
+#-----------------------------------------------------
+# ADS license file (should go into master file)
+#-----------------------------------------------------
+
+#export ADS_LICENSE_FILE=27003@zuka.seas.gwu.edu
+#--------------------------------------------------
+# CADENCE, SYNOPSYS, ADS, & SONNET Tools
+#------------------------------------------------------
+
+[[ -e /apps/vlsi_2018/cadence/startup_scripts/virtuoso.env ]] && \
+    . /apps/vlsi_2018/cadence/startup_scripts/virtuoso.env
+[[ -e /apps/vlsi_2018/synopsys/startup_scripts/synopsys.env ]] && \
+    . /apps/vlsi_2018/synopsys/startup_scripts/synopsys.env
+[[ -e /apps/ads/startup_scripts/ads.env ]] && \
+    . /apps/ads/startup_scripts/ads.env
+[[ -e /apps/sonnet/startup_scripts/sonnet.env ]] && \
+    . /apps/sonnet/startup_scripts/sonnet.env
+
+#-----------------------------------------------------
+# VNC and ECE 126/128 path Vars
+#------------------------------------------------------
+stty erase ^H
+stty erase ^?
+
+EDITOR=gedit
+FCEDIT=gedit
+VISUAL=gedit
+
+export TIMEOUT=0
+
+
+#-----------------------------------------------------
+# ADS license file (should go into master file)
+#-----------------------------------------------------
+export PATH=$PATH:~vlsi/course_all/vnc_scripts
+export PATH=$PATH:~vlsi/course_ece128/scripts
+
+export PATH=$PATH:/home/seas/vlsi/course_all/vnc_scripts
+export PATH=$PATH:/home/seas/vlsi/course_ece128/scripts
+
+
+
+umask 002
